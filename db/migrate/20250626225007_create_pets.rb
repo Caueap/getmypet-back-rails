@@ -8,6 +8,8 @@ class CreatePets < ActiveRecord::Migration[8.0]
       t.integer :age
       t.string :gender
       t.string :description
+      t.string :images, array: true, default: []
+      t.string :vaccinations, array: true, default: []
       t.string :status
       t.boolean :isNeutered
       t.string :location
